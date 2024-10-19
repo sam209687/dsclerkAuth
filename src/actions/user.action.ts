@@ -2,8 +2,14 @@
 
 import UserModel from "@/models/User";
 import { dbConnect } from "../../db";
-
-export async function createUser(user: any) {
+interface User {
+    clerkId: string;
+    email: string;
+    username: string;
+    photo: string;
+    phone: string;
+}
+export async function createUser(user: User) {
     try {
         await dbConnect();
         const newUser = await UserModel.create(user);
