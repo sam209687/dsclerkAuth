@@ -31,11 +31,6 @@ export default function DesktopNav() {
         ) : (
           <>
             
-            {/* <Link href="/profile">
-               <li>Profile</li>
-              
-            </Link> */}
-           
             <li className="flex items-center">
                <UserButton />
              
