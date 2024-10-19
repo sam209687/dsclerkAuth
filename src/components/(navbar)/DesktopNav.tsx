@@ -2,7 +2,6 @@ import { UserButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import Link from "next/link";
 import React from "react";
-import { IoMdSearch } from "react-icons/io";
 import { TbSolarElectricity } from "react-icons/tb";
 
 export default function DesktopNav() {
